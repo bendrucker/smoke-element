@@ -19,7 +19,7 @@
     "element"
   ],
   "devDependencies": {
-    "browserify": "~13.3.0",
+    "browserify": "~14.0.0",
     "budo": "~9.4.0",
     "standard": "^8.0.0",
     "tape": "^4.0.0"
