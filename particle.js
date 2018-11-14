@@ -15,9 +15,9 @@ function Particle (data) {
     vx: (Math.random() * 8 - 4) / 100,
     vy: vy,
     lifetime: Math.random() * data.lifetime + data.lifetime / 2,
-    initial: {vy},
+    initial: { vy },
     scale,
-    final: {scale: 5 + scale + Math.random()}
+    final: { scale: 5 + scale + Math.random() }
   })
 }
 

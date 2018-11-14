@@ -12,4 +12,4 @@ img.height = 300
 
 document.body.appendChild(img)
 
-smoke({element: img})
+smoke({ element: img })

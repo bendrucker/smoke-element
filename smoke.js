@@ -7,7 +7,7 @@ const Particle = require('./particle')
 
 const Image = global.Image
 
-const png = fs.readFileSync(path.resolve(__dirname, 'smoke.png'), {encoding: 'base64'})
+const png = fs.readFileSync(path.resolve(__dirname, 'smoke.png'), { encoding: 'base64' })
 const src = 'data:image/png;base64,' + png
 
 module.exports = Smoke
@@ -18,7 +18,7 @@ function Smoke (options) {
   }
 
   this.element = options.element
-  this.img = Object.assign(new Image(), {src: createImage(src, options.colors || [0, 0, 0])})
+  this.img = Object.assign(new Image(), { src: createImage(src, options.colors || [0, 0, 0]) })
 
   this.canvas = Object.assign(document.createElement('canvas'), {
     height: 50 * this.img.height,
@@ -42,13 +42,13 @@ function Smoke (options) {
 Smoke.prototype.start = function start () {
   this.loop = raf((delta) => {
     if (!this.done) {
-      this.add({x: this.canvas.width / 2, y: this.canvas.height, lifetime: 4000})
-      this.add({x: this.canvas.width / 2.1, y: this.canvas.height, lifetime: 4000})
-      this.add({x: this.canvas.width / 1.9, y: this.canvas.height, lifetime: 4000})
+      this.add({ x: this.canvas.width / 2, y: this.canvas.height, lifetime: 4000 })
+      this.add({ x: this.canvas.width / 2.1, y: this.canvas.height, lifetime: 4000 })
+      this.add({ x: this.canvas.width / 1.9, y: this.canvas.height, lifetime: 4000 })
     }
     this.update(delta)
   })
-  .start()
+    .start()
 }
 
 Smoke.prototype.stop = function stop () {

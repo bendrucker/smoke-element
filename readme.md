@@ -1,4 +1,4 @@
-# smoke-element [![Build Status](https://travis-ci.org/bendrucker/smoke-element.svg?branch=master)](https://travis-ci.org/bendrucker/smoke-element)
+# smoke-element [![Build Status](https://travis-ci.org/bendrucker/smoke-element.svg?branch=master)](https://travis-ci.org/bendrucker/smoke-element) [![Greenkeeper badge](https://badges.greenkeeper.io/bendrucker/smoke-element.svg)](https://greenkeeper.io/)
 
 > Make smoke over an element
 
